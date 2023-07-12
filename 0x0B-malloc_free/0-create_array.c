@@ -5,10 +5,9 @@
  * create_array - create array of size size and assign char c
  * @size: size of array
  * @c: char to assign
+ * Description: create array of size size and assign char c
+ * Return: pointer to array, NULL if fail
  *
- * Description: Create an array of size "size" and assign char "c" to each element.
- *
- * Return: Pointer to the array, NULL if allocation fails or size is 0.
  */
 char *create_array(unsigned int size, char c)
 {
@@ -21,6 +20,5 @@ char *create_array(unsigned int size, char c)
 
 	for (i = 0; i < size; i++)
 		str[i] = c;
-
 	return (str);
 }
